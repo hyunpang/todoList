@@ -1,0 +1,121 @@
+body {
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  font-family: system-ui, serif;
+  padding: 3rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.js-clock h1 {
+  font-size: 130px;
+  margin: 0;
+}
+
+.js-clock h5 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.js-toDoForm {
+  margin-top: 60px;
+}
+
+.js-toDoForm span {
+  font-size: 30px;
+}
+
+.focus-input {
+  width: 100%;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.js-toDoList {
+  font-weight: bold;
+}
+
+.js-toDoList li {
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.js-toDoList li span {
+  margin-right: 20px;
+}
+
+.js-toDoList li button {
+  background: url( "../images/delete.png" ) no-repeat scroll 50% 50% / cover;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+#weather {
+  position: absolute;
+  left: 99%;
+  transform: translate(-99%, 0%);
+  width: 150px;
+  color: white;
+}
+
+.weather-temp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.weather-temp img {
+  width: 30px;
+  height: 30px;
+}
+
+.weather-city {
+  text-align: right;
+}
